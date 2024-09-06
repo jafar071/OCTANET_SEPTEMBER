@@ -1,0 +1,368 @@
+/* General Styles */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+/* Navbar Styles */
+nav {
+    background: #4CAF50; /* Darker green background for navbar */
+    padding: 1rem 2rem; /* Add padding for better spacing */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the menu items */
+    gap: 3rem; /* Space between menu items */
+   text-transform: uppercase;
+ 
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* White text color */
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+nav a:hover {
+    color: black; /* Change color on hover */
+    transform: scale(1.5); /* Slightly enlarge the text on hover */
+    font-size: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: sticky;
+}
+#h1,#p{
+    text-shadow: 2px 2px 2px green;
+}
+#p{
+    padding-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+}
+/* Hero Section Styles */
+.hero {
+    background: url('BACK.jpeg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    text-shadow: 2px solid black;
+    font-size: 6rem;
+    margin: 0;
+    color:wheat;
+}
+
+.hero p {
+    font-size: 2rem;
+}
+
+/* About Section Styles */
+#about {
+    background: #e8f5e9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+/* About Section Styles */
+.about-section {
+    background: #f5f5f5; /* Light gray background */
+    padding: 4rem 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between text and image */
+}
+
+.about-text {
+    flex: 1; /* Take up remaining space */
+    max-width: 600px; /* Limit width of text content */
+}
+
+.about-text h2 {
+    color: #4CAF50; /* Green color for headings */
+}
+
+.about-text p {
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Darker text color */
+}
+
+.about-img {
+    flex: 1; /* Take up space in flex container */
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+/* Features Section Styles */
+.features {
+    background: #dcedc8;
+    padding: 4rem 2rem;
+}
+
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature:hover {
+    background-color: #c8e6c9;
+    transform: translateY(-5px);
+}
+
+/* Farming Techniques Section Styles */
+.farming-techniques {
+    background: #f1f8e9;
+    padding: 4rem 2rem;
+}
+
+.techniques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.technique {
+    flex: 1 1 calc(50% - 1rem);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.technique:hover {
+    background-color: #c8e6c9;
+    transform: translateY(-5px);
+}
+
+/* Resources Section Styles */
+.resources {
+    background: #f5f5f5;
+    padding: 4rem 2rem;
+}
+
+.resources .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.resource {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resource:hover {
+    background-color:  #c8e6c9;
+    transform: translateY(-5px);
+}
+
+.resource a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.resource a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section Styles */
+.cta {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+}
+.cta:hover{
+    background: rgba(136, 239, 136, 0.926);
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 180px;
+    text-transform: uppercase;
+    margin-left: 150px;
+}
+
+button:hover {
+    background: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Features Section Styles */
+.features {
+    background: #dcedc8; /* Light green background */
+    padding: 4rem 2rem;
+}
+
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 2rem); /* Adjusts to 3 columns with spacing */
+    background: #ffffff; /* White background for each feature */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature h3 {
+    margin-top: 0;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.feature p {
+    margin-bottom: 0;
+}
+
+.feature:hover {
+    background-color:  #c8e6c9; /* Light green background on hover */
+    transform: translateY(-5px);
+}
+
+/* Resources Section Styles */
+.resources {
+    background: #f5f5f5; /* Light gray background */
+    padding: 4rem 2rem;
+}
+
+.resources .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.resource {
+    flex: 1 1 calc(33.333% - 2rem); /* Adjusts to 3 columns with spacing */
+    background: #ffffff; /* White background for each resource */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resource h3 {
+    margin-top: 0;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.resource p {
+    margin-bottom: 0;
+}
+
+.resource a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.resource a:hover {
+    color: #388e3c; /* Darker green on hover */
+}
+
+.resource:hover {
+    background-color:  #c8e6c9; /* Light gray background on hover */
+    transform: translateY(-5px);
+}
+P{
+    font-size: 20PX;
+}
